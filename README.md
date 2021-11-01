@@ -11,7 +11,7 @@ This repository contains a FHIR® R4 models for Go. The models consist of Go str
 
 ## Usage
 
-In your project, import `github.com/samply/golang-fhir-models/fhir-models/fhir` and you are done.
+In your project, import `github.com/lifebox-healthcare/golang-fhir-models/fhir-models/fhir` and you are done.
 
 ## TODOs
 
