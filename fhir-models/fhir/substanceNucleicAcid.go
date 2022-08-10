@@ -21,7 +21,7 @@ import "encoding/json"
 
 // SubstanceNucleicAcid is documented here http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid
 type SubstanceNucleicAcid struct {
-	Id                  *string                       `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                       `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                *Meta                         `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules       *string                       `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language            *string                       `bson:"language,omitempty" json:"language,omitempty"`
@@ -35,7 +35,7 @@ type SubstanceNucleicAcid struct {
 	Subunit             []SubstanceNucleicAcidSubunit `bson:"subunit,omitempty" json:"subunit,omitempty"`
 }
 type SubstanceNucleicAcidSubunit struct {
-	Id                 *string                              `bson:"id,omitempty" json:"id,omitempty"`
+	ID                 *string                              `bson:"id,omitempty" json:"id,omitempty"`
 	Extension          []Extension                          `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension  []Extension                          `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Subunit            *int                                 `bson:"subunit,omitempty" json:"subunit,omitempty"`
@@ -48,7 +48,7 @@ type SubstanceNucleicAcidSubunit struct {
 	Sugar              []SubstanceNucleicAcidSubunitSugar   `bson:"sugar,omitempty" json:"sugar,omitempty"`
 }
 type SubstanceNucleicAcidSubunitLinkage struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Connectivity      *string     `bson:"connectivity,omitempty" json:"connectivity,omitempty"`
@@ -57,7 +57,7 @@ type SubstanceNucleicAcidSubunitLinkage struct {
 	ResidueSite       *string     `bson:"residueSite,omitempty" json:"residueSite,omitempty"`
 }
 type SubstanceNucleicAcidSubunitSugar struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Identifier        *Identifier `bson:"identifier,omitempty" json:"identifier,omitempty"`

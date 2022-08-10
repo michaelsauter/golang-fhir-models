@@ -21,7 +21,7 @@ import "encoding/json"
 
 // PlanDefinition is documented here http://hl7.org/fhir/StructureDefinition/PlanDefinition
 type PlanDefinition struct {
-	Id                     *string                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                     *string                `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                   *Meta                  `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules          *string                `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language               *string                `bson:"language,omitempty" json:"language,omitempty"`
@@ -62,7 +62,7 @@ type PlanDefinition struct {
 	Action                 []PlanDefinitionAction `bson:"action,omitempty" json:"action,omitempty"`
 }
 type PlanDefinitionGoal struct {
-	Id                *string                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                    `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Category          *CodeableConcept           `bson:"category,omitempty" json:"category,omitempty"`
@@ -74,7 +74,7 @@ type PlanDefinitionGoal struct {
 	Target            []PlanDefinitionGoalTarget `bson:"target,omitempty" json:"target,omitempty"`
 }
 type PlanDefinitionGoalTarget struct {
-	Id                    *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension             []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension     []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Measure               *CodeableConcept `bson:"measure,omitempty" json:"measure,omitempty"`
@@ -84,7 +84,7 @@ type PlanDefinitionGoalTarget struct {
 	Due                   *Duration        `bson:"due,omitempty" json:"due,omitempty"`
 }
 type PlanDefinitionAction struct {
-	Id                     *string                             `bson:"id,omitempty" json:"id,omitempty"`
+	ID                     *string                             `bson:"id,omitempty" json:"id,omitempty"`
 	Extension              []Extension                         `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension      []Extension                         `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Prefix                 *string                             `bson:"prefix,omitempty" json:"prefix,omitempty"`
@@ -123,14 +123,14 @@ type PlanDefinitionAction struct {
 	Action                 []PlanDefinitionAction              `bson:"action,omitempty" json:"action,omitempty"`
 }
 type PlanDefinitionActionCondition struct {
-	Id                *string             `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string             `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension         `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension         `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Kind              ActionConditionKind `bson:"kind" json:"kind"`
 	Expression        *Expression         `bson:"expression,omitempty" json:"expression,omitempty"`
 }
 type PlanDefinitionActionRelatedAction struct {
-	Id                *string                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ActionId          string                 `bson:"actionId" json:"actionId"`
@@ -139,14 +139,14 @@ type PlanDefinitionActionRelatedAction struct {
 	OffsetRange       *Range                 `bson:"offsetRange,omitempty" json:"offsetRange,omitempty"`
 }
 type PlanDefinitionActionParticipant struct {
-	Id                *string               `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string               `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension           `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension           `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              ActionParticipantType `bson:"type" json:"type"`
 	Role              *CodeableConcept      `bson:"role,omitempty" json:"role,omitempty"`
 }
 type PlanDefinitionActionDynamicValue struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Path              *string     `bson:"path,omitempty" json:"path,omitempty"`

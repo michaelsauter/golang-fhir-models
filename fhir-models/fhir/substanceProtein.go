@@ -21,7 +21,7 @@ import "encoding/json"
 
 // SubstanceProtein is documented here http://hl7.org/fhir/StructureDefinition/SubstanceProtein
 type SubstanceProtein struct {
-	Id                *string                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                   `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                     `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                   `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                   `bson:"language,omitempty" json:"language,omitempty"`
@@ -34,7 +34,7 @@ type SubstanceProtein struct {
 	Subunit           []SubstanceProteinSubunit `bson:"subunit,omitempty" json:"subunit,omitempty"`
 }
 type SubstanceProteinSubunit struct {
-	Id                      *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                      *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension               []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension       []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Subunit                 *int        `bson:"subunit,omitempty" json:"subunit,omitempty"`

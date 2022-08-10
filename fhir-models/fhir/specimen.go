@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Specimen is documented here http://hl7.org/fhir/StructureDefinition/Specimen
 type Specimen struct {
-	Id                  *string              `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string              `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                *Meta                `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules       *string              `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language            *string              `bson:"language,omitempty" json:"language,omitempty"`
@@ -43,7 +43,7 @@ type Specimen struct {
 	Note                []Annotation         `bson:"note,omitempty" json:"note,omitempty"`
 }
 type SpecimenCollection struct {
-	Id                           *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                           *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension                    []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension            []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Collector                    *Reference       `bson:"collector,omitempty" json:"collector,omitempty"`
@@ -57,7 +57,7 @@ type SpecimenCollection struct {
 	FastingStatusDuration        *Duration        `bson:"fastingStatusDuration,omitempty" json:"fastingStatusDuration,omitempty"`
 }
 type SpecimenProcessing struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Description       *string          `bson:"description,omitempty" json:"description,omitempty"`
@@ -67,7 +67,7 @@ type SpecimenProcessing struct {
 	TimePeriod        *Period          `bson:"timePeriod,omitempty" json:"timePeriod,omitempty"`
 }
 type SpecimenContainer struct {
-	Id                      *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                      *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension               []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension       []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Identifier              []Identifier     `bson:"identifier,omitempty" json:"identifier,omitempty"`

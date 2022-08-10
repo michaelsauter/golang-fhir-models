@@ -21,7 +21,7 @@ import "encoding/json"
 
 // AuditEvent is documented here http://hl7.org/fhir/StructureDefinition/AuditEvent
 type AuditEvent struct {
-	Id                *string            `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string            `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta              `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string            `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string            `bson:"language,omitempty" json:"language,omitempty"`
@@ -41,7 +41,7 @@ type AuditEvent struct {
 	Entity            []AuditEventEntity `bson:"entity,omitempty" json:"entity,omitempty"`
 }
 type AuditEventAgent struct {
-	Id                *string                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept        `bson:"type,omitempty" json:"type,omitempty"`
@@ -57,14 +57,14 @@ type AuditEventAgent struct {
 	PurposeOfUse      []CodeableConcept       `bson:"purposeOfUse,omitempty" json:"purposeOfUse,omitempty"`
 }
 type AuditEventAgentNetwork struct {
-	Id                *string                     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                 `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                 `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Address           *string                     `bson:"address,omitempty" json:"address,omitempty"`
 	Type              *AuditEventAgentNetworkType `bson:"type,omitempty" json:"type,omitempty"`
 }
 type AuditEventSource struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Site              *string     `bson:"site,omitempty" json:"site,omitempty"`
@@ -72,7 +72,7 @@ type AuditEventSource struct {
 	Type              []Coding    `bson:"type,omitempty" json:"type,omitempty"`
 }
 type AuditEventEntity struct {
-	Id                *string                  `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                  `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension              `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension              `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	What              *Reference               `bson:"what,omitempty" json:"what,omitempty"`
@@ -86,7 +86,7 @@ type AuditEventEntity struct {
 	Detail            []AuditEventEntityDetail `bson:"detail,omitempty" json:"detail,omitempty"`
 }
 type AuditEventEntityDetail struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              string      `bson:"type" json:"type"`

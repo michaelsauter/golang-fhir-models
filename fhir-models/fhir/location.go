@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Location is documented here http://hl7.org/fhir/StructureDefinition/Location
 type Location struct {
-	Id                     *string                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                     *string                    `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                   *Meta                      `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules          *string                    `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language               *string                    `bson:"language,omitempty" json:"language,omitempty"`
@@ -47,7 +47,7 @@ type Location struct {
 	Endpoint               []Reference                `bson:"endpoint,omitempty" json:"endpoint,omitempty"`
 }
 type LocationPosition struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Longitude         string      `bson:"longitude" json:"longitude"`
@@ -55,7 +55,7 @@ type LocationPosition struct {
 	Altitude          *string     `bson:"altitude,omitempty" json:"altitude,omitempty"`
 }
 type LocationHoursOfOperation struct {
-	Id                *string      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string      `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension  `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension  `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	DaysOfWeek        []DaysOfWeek `bson:"daysOfWeek,omitempty" json:"daysOfWeek,omitempty"`
