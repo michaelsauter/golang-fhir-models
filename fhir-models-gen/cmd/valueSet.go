@@ -3,9 +3,10 @@ package cmd
 import (
 	"errors"
 	"fmt"
+	"strings"
+
 	"github.com/dave/jennifer/jen"
 	"github.com/lifebox-healthcare/golang-fhir-models/fhir-models-gen/fhir"
-	"strings"
 )
 
 func generateValueSet(resources ResourceMap, valueSet fhir.ValueSet) (*jen.File, error) {
@@ -57,7 +58,11 @@ func generateValueSet(resources ResourceMap, valueSet fhir.ValueSet) (*jen.File,
 		Params().
 		Params(jen.Op("[]").Byte(), jen.Error()).
 		Block(
-			jen.Return(jen.Qual("encoding/json", "Marshal").Call(jen.Id("code").Op(".").Id("Code").Call())),
+			jen.Id("buffer").Op(":=").Qual("bytes", "Buffer").Block(),
+			jen.Id("enc").Op(":=").Qual("encoding/json", "NewEncoder").Call(jen.Id("&buffer")),
+			jen.Id("enc").Op(".").Id("SetEscapeHTML").Call(jen.False()),
+			jen.Id("err").Op(":=").Id("enc").Op(".").Id("Encode").Call(jen.Id("code").Op(".").Id("Code").Call()),
+			jen.Return(jen.Id("buffer").Op(".").Id("Bytes").Call(), jen.Id("err")),
 		)
 
 	// UnmarshalJSON function
