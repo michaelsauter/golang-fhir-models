@@ -21,6 +21,6 @@ package fhir
 type Money struct {
 	ID        *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
-	Value     *string     `bson:"value,omitempty" json:"value,omitempty"`
+	Value     *float64    `bson:"value,omitempty" json:"value,omitempty"`
 	Currency  *string     `bson:"currency,omitempty" json:"currency,omitempty"`
 }

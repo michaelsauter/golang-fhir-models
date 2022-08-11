@@ -77,7 +77,7 @@ type RiskEvidenceSynthesisRiskEstimate struct {
 	ModifierExtension []Extension                                          `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Description       *string                                              `bson:"description,omitempty" json:"description,omitempty"`
 	Type              *CodeableConcept                                     `bson:"type,omitempty" json:"type,omitempty"`
-	Value             *string                                              `bson:"value,omitempty" json:"value,omitempty"`
+	Value             *float64                                             `bson:"value,omitempty" json:"value,omitempty"`
 	UnitOfMeasure     *CodeableConcept                                     `bson:"unitOfMeasure,omitempty" json:"unitOfMeasure,omitempty"`
 	DenominatorCount  *int                                                 `bson:"denominatorCount,omitempty" json:"denominatorCount,omitempty"`
 	NumeratorCount    *int                                                 `bson:"numeratorCount,omitempty" json:"numeratorCount,omitempty"`
@@ -88,9 +88,9 @@ type RiskEvidenceSynthesisRiskEstimatePrecisionEstimate struct {
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept `bson:"type,omitempty" json:"type,omitempty"`
-	Level             *string          `bson:"level,omitempty" json:"level,omitempty"`
-	From              *string          `bson:"from,omitempty" json:"from,omitempty"`
-	To                *string          `bson:"to,omitempty" json:"to,omitempty"`
+	Level             *float64         `bson:"level,omitempty" json:"level,omitempty"`
+	From              *float64         `bson:"from,omitempty" json:"from,omitempty"`
+	To                *float64         `bson:"to,omitempty" json:"to,omitempty"`
 }
 type RiskEvidenceSynthesisCertainty struct {
 	ID                    *string                                               `bson:"id,omitempty" json:"id,omitempty"`

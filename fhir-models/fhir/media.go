@@ -51,7 +51,7 @@ type Media struct {
 	Height            *int              `bson:"height,omitempty" json:"height,omitempty"`
 	Width             *int              `bson:"width,omitempty" json:"width,omitempty"`
 	Frames            *int              `bson:"frames,omitempty" json:"frames,omitempty"`
-	Duration          *string           `bson:"duration,omitempty" json:"duration,omitempty"`
+	Duration          *float64          `bson:"duration,omitempty" json:"duration,omitempty"`
 	Content           Attachment        `bson:"content" json:"content"`
 	Note              []Annotation      `bson:"note,omitempty" json:"note,omitempty"`
 }

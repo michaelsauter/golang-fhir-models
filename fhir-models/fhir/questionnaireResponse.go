@@ -58,7 +58,7 @@ type QuestionnaireResponseItemAnswer struct {
 	Extension         []Extension                 `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                 `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ValueBoolean      *bool                       `bson:"valueBoolean,omitempty" json:"valueBoolean,omitempty"`
-	ValueDecimal      *string                     `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
+	ValueDecimal      *float64                    `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
 	ValueInteger      *int                        `bson:"valueInteger,omitempty" json:"valueInteger,omitempty"`
 	ValueDate         *string                     `bson:"valueDate,omitempty" json:"valueDate,omitempty"`
 	ValueDateTime     *string                     `bson:"valueDateTime,omitempty" json:"valueDateTime,omitempty"`
