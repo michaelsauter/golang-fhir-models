@@ -28,7 +28,7 @@ type Extension struct {
 	ValueCode                *string              `bson:"valueCode,omitempty" json:"valueCode,omitempty"`
 	ValueDate                *string              `bson:"valueDate,omitempty" json:"valueDate,omitempty"`
 	ValueDateTime            *string              `bson:"valueDateTime,omitempty" json:"valueDateTime,omitempty"`
-	ValueDecimal             *string              `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
+	ValueDecimal             *float64             `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
 	ValueId                  *string              `bson:"valueId,omitempty" json:"valueId,omitempty"`
 	ValueInstant             *string              `bson:"valueInstant,omitempty" json:"valueInstant,omitempty"`
 	ValueInteger             *int                 `bson:"valueInteger,omitempty" json:"valueInteger,omitempty"`

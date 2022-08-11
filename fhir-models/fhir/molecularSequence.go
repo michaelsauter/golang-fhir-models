@@ -80,14 +80,14 @@ type MolecularSequenceQuality struct {
 	End               *int                         `bson:"end,omitempty" json:"end,omitempty"`
 	Score             *Quantity                    `bson:"score,omitempty" json:"score,omitempty"`
 	Method            *CodeableConcept             `bson:"method,omitempty" json:"method,omitempty"`
-	TruthTP           *string                      `bson:"truthTP,omitempty" json:"truthTP,omitempty"`
-	QueryTP           *string                      `bson:"queryTP,omitempty" json:"queryTP,omitempty"`
-	TruthFN           *string                      `bson:"truthFN,omitempty" json:"truthFN,omitempty"`
-	QueryFP           *string                      `bson:"queryFP,omitempty" json:"queryFP,omitempty"`
-	GtFP              *string                      `bson:"gtFP,omitempty" json:"gtFP,omitempty"`
-	Precision         *string                      `bson:"precision,omitempty" json:"precision,omitempty"`
-	Recall            *string                      `bson:"recall,omitempty" json:"recall,omitempty"`
-	FScore            *string                      `bson:"fScore,omitempty" json:"fScore,omitempty"`
+	TruthTP           *float64                     `bson:"truthTP,omitempty" json:"truthTP,omitempty"`
+	QueryTP           *float64                     `bson:"queryTP,omitempty" json:"queryTP,omitempty"`
+	TruthFN           *float64                     `bson:"truthFN,omitempty" json:"truthFN,omitempty"`
+	QueryFP           *float64                     `bson:"queryFP,omitempty" json:"queryFP,omitempty"`
+	GtFP              *float64                     `bson:"gtFP,omitempty" json:"gtFP,omitempty"`
+	Precision         *float64                     `bson:"precision,omitempty" json:"precision,omitempty"`
+	Recall            *float64                     `bson:"recall,omitempty" json:"recall,omitempty"`
+	FScore            *float64                     `bson:"fScore,omitempty" json:"fScore,omitempty"`
 	Roc               *MolecularSequenceQualityRoc `bson:"roc,omitempty" json:"roc,omitempty"`
 }
 type MolecularSequenceQualityRoc struct {
@@ -98,9 +98,9 @@ type MolecularSequenceQualityRoc struct {
 	NumTP             []int       `bson:"numTP,omitempty" json:"numTP,omitempty"`
 	NumFP             []int       `bson:"numFP,omitempty" json:"numFP,omitempty"`
 	NumFN             []int       `bson:"numFN,omitempty" json:"numFN,omitempty"`
-	Precision         []string    `bson:"precision,omitempty" json:"precision,omitempty"`
-	Sensitivity       []string    `bson:"sensitivity,omitempty" json:"sensitivity,omitempty"`
-	FMeasure          []string    `bson:"fMeasure,omitempty" json:"fMeasure,omitempty"`
+	Precision         []float64   `bson:"precision,omitempty" json:"precision,omitempty"`
+	Sensitivity       []float64   `bson:"sensitivity,omitempty" json:"sensitivity,omitempty"`
+	FMeasure          []float64   `bson:"fMeasure,omitempty" json:"fMeasure,omitempty"`
 }
 type MolecularSequenceRepository struct {
 	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`

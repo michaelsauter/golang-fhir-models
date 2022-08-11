@@ -22,10 +22,10 @@ type SampledData struct {
 	Id         *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension  []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	Origin     Quantity    `bson:"origin" json:"origin"`
-	Period     string      `bson:"period" json:"period"`
-	Factor     *string     `bson:"factor,omitempty" json:"factor,omitempty"`
-	LowerLimit *string     `bson:"lowerLimit,omitempty" json:"lowerLimit,omitempty"`
-	UpperLimit *string     `bson:"upperLimit,omitempty" json:"upperLimit,omitempty"`
+	Period     float64     `bson:"period" json:"period"`
+	Factor     *float64    `bson:"factor,omitempty" json:"factor,omitempty"`
+	LowerLimit *float64    `bson:"lowerLimit,omitempty" json:"lowerLimit,omitempty"`
+	UpperLimit *float64    `bson:"upperLimit,omitempty" json:"upperLimit,omitempty"`
 	Dimensions int         `bson:"dimensions" json:"dimensions"`
 	Data       *string     `bson:"data,omitempty" json:"data,omitempty"`
 }

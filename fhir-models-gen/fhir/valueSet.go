@@ -109,7 +109,7 @@ type ValueSetExpansionParameter struct {
 	ValueString       *string     `bson:"valueString,omitempty" json:"valueString,omitempty"`
 	ValueBoolean      *bool       `bson:"valueBoolean,omitempty" json:"valueBoolean,omitempty"`
 	ValueInteger      *int        `bson:"valueInteger,omitempty" json:"valueInteger,omitempty"`
-	ValueDecimal      *string     `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
+	ValueDecimal      *float64    `bson:"valueDecimal,omitempty" json:"valueDecimal,omitempty"`
 	ValueUri          *string     `bson:"valueUri,omitempty" json:"valueUri,omitempty"`
 	ValueCode         *string     `bson:"valueCode,omitempty" json:"valueCode,omitempty"`
 	ValueDateTime     *string     `bson:"valueDateTime,omitempty" json:"valueDateTime,omitempty"`

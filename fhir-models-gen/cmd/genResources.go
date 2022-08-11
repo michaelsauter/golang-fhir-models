@@ -502,7 +502,7 @@ func typeCodeToTypeIdentifier(typeCode string) string {
 	case "dateTime":
 		return "string"
 	case "decimal":
-		return "string"
+		return "float64"
 	case "id":
 		return "string"
 	case "instant":
