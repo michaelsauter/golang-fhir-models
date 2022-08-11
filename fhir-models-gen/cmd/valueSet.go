@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/dave/jennifer/jen"
-	"github.com/lifebox-healthcare/golang-fhir-models/fhir-models-gen/fhir"
+	"github.com/michaelsauter/golang-fhir-models/fhir-models-gen/fhir"
 )
 
 func generateValueSet(resources ResourceMap, valueSet fhir.ValueSet) (*jen.File, error) {

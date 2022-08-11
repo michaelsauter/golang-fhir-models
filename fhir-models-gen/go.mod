@@ -1,4 +1,4 @@
-module github.com/lifebox-healthcare/golang-fhir-models/fhir-models-gen
+module github.com/michaelsauter/golang-fhir-models/fhir-models-gen
 
 go 1.13
 
