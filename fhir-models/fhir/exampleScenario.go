@@ -21,7 +21,7 @@ import "encoding/json"
 
 // ExampleScenario is documented here http://hl7.org/fhir/StructureDefinition/ExampleScenario
 type ExampleScenario struct {
-	Id                *string                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                   `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                     `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                   `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                   `bson:"language,omitempty" json:"language,omitempty"`
@@ -47,7 +47,7 @@ type ExampleScenario struct {
 	Workflow          []string                  `bson:"workflow,omitempty" json:"workflow,omitempty"`
 }
 type ExampleScenarioActor struct {
-	Id                *string                  `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                  `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension              `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension              `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ActorId           string                   `bson:"actorId" json:"actorId"`
@@ -56,7 +56,7 @@ type ExampleScenarioActor struct {
 	Description       *string                  `bson:"description,omitempty" json:"description,omitempty"`
 }
 type ExampleScenarioInstance struct {
-	Id                *string                                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                    `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ResourceId        string                                     `bson:"resourceId" json:"resourceId"`
@@ -67,21 +67,21 @@ type ExampleScenarioInstance struct {
 	ContainedInstance []ExampleScenarioInstanceContainedInstance `bson:"containedInstance,omitempty" json:"containedInstance,omitempty"`
 }
 type ExampleScenarioInstanceVersion struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	VersionId         string      `bson:"versionId" json:"versionId"`
 	Description       string      `bson:"description" json:"description"`
 }
 type ExampleScenarioInstanceContainedInstance struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ResourceId        string      `bson:"resourceId" json:"resourceId"`
 	VersionId         *string     `bson:"versionId,omitempty" json:"versionId,omitempty"`
 }
 type ExampleScenarioProcess struct {
-	Id                *string                      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                      `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                  `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                  `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Title             string                       `bson:"title" json:"title"`
@@ -91,7 +91,7 @@ type ExampleScenarioProcess struct {
 	Step              []ExampleScenarioProcessStep `bson:"step,omitempty" json:"step,omitempty"`
 }
 type ExampleScenarioProcessStep struct {
-	Id                *string                                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Process           []ExampleScenarioProcess                `bson:"process,omitempty" json:"process,omitempty"`
@@ -100,7 +100,7 @@ type ExampleScenarioProcessStep struct {
 	Alternative       []ExampleScenarioProcessStepAlternative `bson:"alternative,omitempty" json:"alternative,omitempty"`
 }
 type ExampleScenarioProcessStepOperation struct {
-	Id                *string                                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                   `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                               `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                               `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Number            string                                    `bson:"number" json:"number"`
@@ -115,7 +115,7 @@ type ExampleScenarioProcessStepOperation struct {
 	Response          *ExampleScenarioInstanceContainedInstance `bson:"response,omitempty" json:"response,omitempty"`
 }
 type ExampleScenarioProcessStepAlternative struct {
-	Id                *string                      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                      `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                  `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                  `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Title             string                       `bson:"title" json:"title"`

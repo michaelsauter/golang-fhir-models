@@ -21,7 +21,7 @@ import "encoding/json"
 
 // FamilyMemberHistory is documented here http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory
 type FamilyMemberHistory struct {
-	Id                    *string                        `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string                        `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                  *Meta                          `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules         *string                        `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language              *string                        `bson:"language,omitempty" json:"language,omitempty"`
@@ -56,7 +56,7 @@ type FamilyMemberHistory struct {
 	Condition             []FamilyMemberHistoryCondition `bson:"condition,omitempty" json:"condition,omitempty"`
 }
 type FamilyMemberHistoryCondition struct {
-	Id                 *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                 *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension          []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension  []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code               CodeableConcept  `bson:"code" json:"code"`

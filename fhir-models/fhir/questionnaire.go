@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Questionnaire is documented here http://hl7.org/fhir/StructureDefinition/Questionnaire
 type Questionnaire struct {
-	Id                *string             `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string             `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta               `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string             `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string             `bson:"language,omitempty" json:"language,omitempty"`
@@ -52,7 +52,7 @@ type Questionnaire struct {
 	Item              []QuestionnaireItem `bson:"item,omitempty" json:"item,omitempty"`
 }
 type QuestionnaireItem struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	LinkId            string                          `bson:"linkId" json:"linkId"`
@@ -73,7 +73,7 @@ type QuestionnaireItem struct {
 	Item              []QuestionnaireItem             `bson:"item,omitempty" json:"item,omitempty"`
 }
 type QuestionnaireItemEnableWhen struct {
-	Id                *string                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                   `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension               `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension               `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Question          string                    `bson:"question" json:"question"`
@@ -90,7 +90,7 @@ type QuestionnaireItemEnableWhen struct {
 	AnswerReference   Reference                 `bson:"answerReference" json:"answerReference"`
 }
 type QuestionnaireItemAnswerOption struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ValueInteger      int         `bson:"valueInteger" json:"valueInteger"`
@@ -102,7 +102,7 @@ type QuestionnaireItemAnswerOption struct {
 	InitialSelected   *bool       `bson:"initialSelected,omitempty" json:"initialSelected,omitempty"`
 }
 type QuestionnaireItemInitial struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ValueBoolean      bool        `bson:"valueBoolean" json:"valueBoolean"`

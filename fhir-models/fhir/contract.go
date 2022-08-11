@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Contract is documented here http://hl7.org/fhir/StructureDefinition/Contract
 type Contract struct {
-	Id                       *string                      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                       *string                      `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                     *Meta                        `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules            *string                      `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language                 *string                      `bson:"language,omitempty" json:"language,omitempty"`
@@ -65,7 +65,7 @@ type Contract struct {
 	LegallyBindingReference  *Reference                   `bson:"legallyBindingReference,omitempty" json:"legallyBindingReference,omitempty"`
 }
 type ContractContentDefinition struct {
-	Id                *string                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              CodeableConcept                        `bson:"type" json:"type"`
@@ -76,7 +76,7 @@ type ContractContentDefinition struct {
 	Copyright         *string                                `bson:"copyright,omitempty" json:"copyright,omitempty"`
 }
 type ContractTerm struct {
-	Id                   *string                     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                   *string                     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension            []Extension                 `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension    []Extension                 `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Identifier           *Identifier                 `bson:"identifier,omitempty" json:"identifier,omitempty"`
@@ -94,7 +94,7 @@ type ContractTerm struct {
 	Group                []ContractTerm              `bson:"group,omitempty" json:"group,omitempty"`
 }
 type ContractTermSecurityLabel struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Number            []int       `bson:"number,omitempty" json:"number,omitempty"`
@@ -103,7 +103,7 @@ type ContractTermSecurityLabel struct {
 	Control           []Coding    `bson:"control,omitempty" json:"control,omitempty"`
 }
 type ContractTermOffer struct {
-	Id                  *string                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                   `bson:"id,omitempty" json:"id,omitempty"`
 	Extension           []Extension               `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension   []Extension               `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Identifier          []Identifier              `bson:"identifier,omitempty" json:"identifier,omitempty"`
@@ -118,14 +118,14 @@ type ContractTermOffer struct {
 	SecurityLabelNumber []int                     `bson:"securityLabelNumber,omitempty" json:"securityLabelNumber,omitempty"`
 }
 type ContractTermOfferParty struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Reference         []Reference     `bson:"reference" json:"reference"`
 	Role              CodeableConcept `bson:"role" json:"role"`
 }
 type ContractTermOfferAnswer struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ValueBoolean      bool        `bson:"valueBoolean" json:"valueBoolean"`
@@ -142,7 +142,7 @@ type ContractTermOfferAnswer struct {
 	ValueReference    Reference   `bson:"valueReference" json:"valueReference"`
 }
 type ContractTermAsset struct {
-	Id                  *string                       `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                       `bson:"id,omitempty" json:"id,omitempty"`
 	Extension           []Extension                   `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension   []Extension                   `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Scope               *CodeableConcept              `bson:"scope,omitempty" json:"scope,omitempty"`
@@ -162,7 +162,7 @@ type ContractTermAsset struct {
 	ValuedItem          []ContractTermAssetValuedItem `bson:"valuedItem,omitempty" json:"valuedItem,omitempty"`
 }
 type ContractTermAssetContext struct {
-	Id                *string           `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string           `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension       `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension       `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Reference         *Reference        `bson:"reference,omitempty" json:"reference,omitempty"`
@@ -170,7 +170,7 @@ type ContractTermAssetContext struct {
 	Text              *string           `bson:"text,omitempty" json:"text,omitempty"`
 }
 type ContractTermAssetValuedItem struct {
-	Id                    *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension             []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension     []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	EntityCodeableConcept *CodeableConcept `bson:"entityCodeableConcept,omitempty" json:"entityCodeableConcept,omitempty"`
@@ -190,7 +190,7 @@ type ContractTermAssetValuedItem struct {
 	SecurityLabelNumber   []int            `bson:"securityLabelNumber,omitempty" json:"securityLabelNumber,omitempty"`
 }
 type ContractTermAction struct {
-	Id                  *string                     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension           []Extension                 `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension   []Extension                 `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	DoNotPerform        *bool                       `bson:"doNotPerform,omitempty" json:"doNotPerform,omitempty"`
@@ -218,14 +218,14 @@ type ContractTermAction struct {
 	SecurityLabelNumber []int                       `bson:"securityLabelNumber,omitempty" json:"securityLabelNumber,omitempty"`
 }
 type ContractTermActionSubject struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Reference         []Reference      `bson:"reference" json:"reference"`
 	Role              *CodeableConcept `bson:"role,omitempty" json:"role,omitempty"`
 }
 type ContractSigner struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              Coding      `bson:"type" json:"type"`
@@ -233,21 +233,21 @@ type ContractSigner struct {
 	Signature         []Signature `bson:"signature" json:"signature"`
 }
 type ContractFriendly struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ContentAttachment Attachment  `bson:"contentAttachment" json:"contentAttachment"`
 	ContentReference  Reference   `bson:"contentReference" json:"contentReference"`
 }
 type ContractLegal struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ContentAttachment Attachment  `bson:"contentAttachment" json:"contentAttachment"`
 	ContentReference  Reference   `bson:"contentReference" json:"contentReference"`
 }
 type ContractRule struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ContentAttachment Attachment  `bson:"contentAttachment" json:"contentAttachment"`

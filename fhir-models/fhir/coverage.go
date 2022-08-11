@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Coverage is documented here http://hl7.org/fhir/StructureDefinition/Coverage
 type Coverage struct {
-	Id                *string                      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                      `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                        `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                      `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                      `bson:"language,omitempty" json:"language,omitempty"`
@@ -47,7 +47,7 @@ type Coverage struct {
 	Contract          []Reference                  `bson:"contract,omitempty" json:"contract,omitempty"`
 }
 type CoverageClass struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              CodeableConcept `bson:"type" json:"type"`
@@ -55,7 +55,7 @@ type CoverageClass struct {
 	Name              *string         `bson:"name,omitempty" json:"name,omitempty"`
 }
 type CoverageCostToBeneficiary struct {
-	Id                *string                              `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                              `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                          `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                          `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept                     `bson:"type,omitempty" json:"type,omitempty"`
@@ -64,7 +64,7 @@ type CoverageCostToBeneficiary struct {
 	Exception         []CoverageCostToBeneficiaryException `bson:"exception,omitempty" json:"exception,omitempty"`
 }
 type CoverageCostToBeneficiaryException struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              CodeableConcept `bson:"type" json:"type"`

@@ -21,7 +21,7 @@ import "encoding/json"
 
 // SubstanceSpecification is documented here http://hl7.org/fhir/StructureDefinition/SubstanceSpecification
 type SubstanceSpecification struct {
-	Id                   *string                                                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                   *string                                                 `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                 *Meta                                                   `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules        *string                                                 `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language             *string                                                 `bson:"language,omitempty" json:"language,omitempty"`
@@ -49,7 +49,7 @@ type SubstanceSpecification struct {
 	SourceMaterial       *Reference                                              `bson:"sourceMaterial,omitempty" json:"sourceMaterial,omitempty"`
 }
 type SubstanceSpecificationMoiety struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Role              *CodeableConcept `bson:"role,omitempty" json:"role,omitempty"`
@@ -62,7 +62,7 @@ type SubstanceSpecificationMoiety struct {
 	AmountString      *string          `bson:"amountString,omitempty" json:"amountString,omitempty"`
 }
 type SubstanceSpecificationProperty struct {
-	Id                               *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                               *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension                        []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension                []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Category                         *CodeableConcept `bson:"category,omitempty" json:"category,omitempty"`
@@ -74,7 +74,7 @@ type SubstanceSpecificationProperty struct {
 	AmountString                     *string          `bson:"amountString,omitempty" json:"amountString,omitempty"`
 }
 type SubstanceSpecificationStructure struct {
-	Id                       *string                                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                       *string                                                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension                []Extension                                            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension        []Extension                                            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Stereochemistry          *CodeableConcept                                       `bson:"stereochemistry,omitempty" json:"stereochemistry,omitempty"`
@@ -87,7 +87,7 @@ type SubstanceSpecificationStructure struct {
 	Representation           []SubstanceSpecificationStructureRepresentation        `bson:"representation,omitempty" json:"representation,omitempty"`
 }
 type SubstanceSpecificationStructureIsotope struct {
-	Id                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Identifier        *Identifier                                            `bson:"identifier,omitempty" json:"identifier,omitempty"`
@@ -97,7 +97,7 @@ type SubstanceSpecificationStructureIsotope struct {
 	MolecularWeight   *SubstanceSpecificationStructureIsotopeMolecularWeight `bson:"molecularWeight,omitempty" json:"molecularWeight,omitempty"`
 }
 type SubstanceSpecificationStructureIsotopeMolecularWeight struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Method            *CodeableConcept `bson:"method,omitempty" json:"method,omitempty"`
@@ -105,7 +105,7 @@ type SubstanceSpecificationStructureIsotopeMolecularWeight struct {
 	Amount            *Quantity        `bson:"amount,omitempty" json:"amount,omitempty"`
 }
 type SubstanceSpecificationStructureRepresentation struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept `bson:"type,omitempty" json:"type,omitempty"`
@@ -113,7 +113,7 @@ type SubstanceSpecificationStructureRepresentation struct {
 	Attachment        *Attachment      `bson:"attachment,omitempty" json:"attachment,omitempty"`
 }
 type SubstanceSpecificationCode struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              *CodeableConcept `bson:"code,omitempty" json:"code,omitempty"`
@@ -123,7 +123,7 @@ type SubstanceSpecificationCode struct {
 	Source            []Reference      `bson:"source,omitempty" json:"source,omitempty"`
 }
 type SubstanceSpecificationName struct {
-	Id                *string                              `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                              `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                          `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                          `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Name              string                               `bson:"name" json:"name"`
@@ -139,7 +139,7 @@ type SubstanceSpecificationName struct {
 	Source            []Reference                          `bson:"source,omitempty" json:"source,omitempty"`
 }
 type SubstanceSpecificationNameOfficial struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Authority         *CodeableConcept `bson:"authority,omitempty" json:"authority,omitempty"`
@@ -147,7 +147,7 @@ type SubstanceSpecificationNameOfficial struct {
 	Date              *string          `bson:"date,omitempty" json:"date,omitempty"`
 }
 type SubstanceSpecificationRelationship struct {
-	Id                       *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                       *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension                []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension        []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	SubstanceReference       *Reference       `bson:"substanceReference,omitempty" json:"substanceReference,omitempty"`

@@ -21,7 +21,7 @@ import "encoding/json"
 
 // ConceptMap is documented here http://hl7.org/fhir/StructureDefinition/ConceptMap
 type ConceptMap struct {
-	Id                *string           `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string           `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta             `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string           `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string           `bson:"language,omitempty" json:"language,omitempty"`
@@ -50,7 +50,7 @@ type ConceptMap struct {
 	Group             []ConceptMapGroup `bson:"group,omitempty" json:"group,omitempty"`
 }
 type ConceptMapGroup struct {
-	Id                *string                  `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                  `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension              `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension              `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Source            *string                  `bson:"source,omitempty" json:"source,omitempty"`
@@ -61,7 +61,7 @@ type ConceptMapGroup struct {
 	Unmapped          *ConceptMapGroupUnmapped `bson:"unmapped,omitempty" json:"unmapped,omitempty"`
 }
 type ConceptMapGroupElement struct {
-	Id                *string                        `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                        `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                    `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                    `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              *string                        `bson:"code,omitempty" json:"code,omitempty"`
@@ -69,7 +69,7 @@ type ConceptMapGroupElement struct {
 	Target            []ConceptMapGroupElementTarget `bson:"target,omitempty" json:"target,omitempty"`
 }
 type ConceptMapGroupElementTarget struct {
-	Id                *string                                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              *string                                 `bson:"code,omitempty" json:"code,omitempty"`
@@ -80,7 +80,7 @@ type ConceptMapGroupElementTarget struct {
 	Product           []ConceptMapGroupElementTargetDependsOn `bson:"product,omitempty" json:"product,omitempty"`
 }
 type ConceptMapGroupElementTargetDependsOn struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Property          string      `bson:"property" json:"property"`
@@ -89,7 +89,7 @@ type ConceptMapGroupElementTargetDependsOn struct {
 	Display           *string     `bson:"display,omitempty" json:"display,omitempty"`
 }
 type ConceptMapGroupUnmapped struct {
-	Id                *string                     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                 `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                 `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Mode              ConceptMapGroupUnmappedMode `bson:"mode" json:"mode"`

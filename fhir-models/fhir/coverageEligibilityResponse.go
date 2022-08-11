@@ -21,7 +21,7 @@ import "encoding/json"
 
 // CoverageEligibilityResponse is documented here http://hl7.org/fhir/StructureDefinition/CoverageEligibilityResponse
 type CoverageEligibilityResponse struct {
-	Id                *string                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                                  `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                                `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                                `bson:"language,omitempty" json:"language,omitempty"`
@@ -46,7 +46,7 @@ type CoverageEligibilityResponse struct {
 	Error             []CoverageEligibilityResponseError     `bson:"error,omitempty" json:"error,omitempty"`
 }
 type CoverageEligibilityResponseInsurance struct {
-	Id                *string                                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                    `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Coverage          Reference                                  `bson:"coverage" json:"coverage"`
@@ -55,7 +55,7 @@ type CoverageEligibilityResponseInsurance struct {
 	Item              []CoverageEligibilityResponseInsuranceItem `bson:"item,omitempty" json:"item,omitempty"`
 }
 type CoverageEligibilityResponseInsuranceItem struct {
-	Id                      *string                                           `bson:"id,omitempty" json:"id,omitempty"`
+	ID                      *string                                           `bson:"id,omitempty" json:"id,omitempty"`
 	Extension               []Extension                                       `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension       []Extension                                       `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Category                *CodeableConcept                                  `bson:"category,omitempty" json:"category,omitempty"`
@@ -74,7 +74,7 @@ type CoverageEligibilityResponseInsuranceItem struct {
 	AuthorizationUrl        *string                                           `bson:"authorizationUrl,omitempty" json:"authorizationUrl,omitempty"`
 }
 type CoverageEligibilityResponseInsuranceItemBenefit struct {
-	Id                 *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                 *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension          []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension  []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type               CodeableConcept `bson:"type" json:"type"`
@@ -86,7 +86,7 @@ type CoverageEligibilityResponseInsuranceItemBenefit struct {
 	UsedMoney          *Money          `bson:"usedMoney,omitempty" json:"usedMoney,omitempty"`
 }
 type CoverageEligibilityResponseError struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              CodeableConcept `bson:"code" json:"code"`

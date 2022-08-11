@@ -21,7 +21,7 @@ import "encoding/json"
 
 // ClaimResponse is documented here http://hl7.org/fhir/StructureDefinition/ClaimResponse
 type ClaimResponse struct {
-	Id                   *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                   *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                 *Meta                           `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules        *string                         `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language             *string                         `bson:"language,omitempty" json:"language,omitempty"`
@@ -57,7 +57,7 @@ type ClaimResponse struct {
 	Error                []ClaimResponseError            `bson:"error,omitempty" json:"error,omitempty"`
 }
 type ClaimResponseItem struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ItemSequence      int                             `bson:"itemSequence" json:"itemSequence"`
@@ -66,7 +66,7 @@ type ClaimResponseItem struct {
 	Detail            []ClaimResponseItemDetail       `bson:"detail,omitempty" json:"detail,omitempty"`
 }
 type ClaimResponseItemAdjudication struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Category          CodeableConcept  `bson:"category" json:"category"`
@@ -75,7 +75,7 @@ type ClaimResponseItemAdjudication struct {
 	Value             *string          `bson:"value,omitempty" json:"value,omitempty"`
 }
 type ClaimResponseItemDetail struct {
-	Id                *string                            `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                            `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                        `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                        `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	DetailSequence    int                                `bson:"detailSequence" json:"detailSequence"`
@@ -84,7 +84,7 @@ type ClaimResponseItemDetail struct {
 	SubDetail         []ClaimResponseItemDetailSubDetail `bson:"subDetail,omitempty" json:"subDetail,omitempty"`
 }
 type ClaimResponseItemDetailSubDetail struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	SubDetailSequence int                             `bson:"subDetailSequence" json:"subDetailSequence"`
@@ -92,7 +92,7 @@ type ClaimResponseItemDetailSubDetail struct {
 	Adjudication      []ClaimResponseItemAdjudication `bson:"adjudication,omitempty" json:"adjudication,omitempty"`
 }
 type ClaimResponseAddItem struct {
-	Id                      *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                      *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension               []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension       []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ItemSequence            []int                           `bson:"itemSequence,omitempty" json:"itemSequence,omitempty"`
@@ -118,7 +118,7 @@ type ClaimResponseAddItem struct {
 	Detail                  []ClaimResponseAddItemDetail    `bson:"detail,omitempty" json:"detail,omitempty"`
 }
 type ClaimResponseAddItemDetail struct {
-	Id                *string                               `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                               `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                           `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                           `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ProductOrService  CodeableConcept                       `bson:"productOrService" json:"productOrService"`
@@ -132,7 +132,7 @@ type ClaimResponseAddItemDetail struct {
 	SubDetail         []ClaimResponseAddItemDetailSubDetail `bson:"subDetail,omitempty" json:"subDetail,omitempty"`
 }
 type ClaimResponseAddItemDetailSubDetail struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ProductOrService  CodeableConcept                 `bson:"productOrService" json:"productOrService"`
@@ -145,14 +145,14 @@ type ClaimResponseAddItemDetailSubDetail struct {
 	Adjudication      []ClaimResponseItemAdjudication `bson:"adjudication,omitempty" json:"adjudication,omitempty"`
 }
 type ClaimResponseTotal struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Category          CodeableConcept `bson:"category" json:"category"`
 	Amount            Money           `bson:"amount" json:"amount"`
 }
 type ClaimResponsePayment struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              CodeableConcept  `bson:"type" json:"type"`
@@ -163,7 +163,7 @@ type ClaimResponsePayment struct {
 	Identifier        *Identifier      `bson:"identifier,omitempty" json:"identifier,omitempty"`
 }
 type ClaimResponseProcessNote struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Number            *int             `bson:"number,omitempty" json:"number,omitempty"`
@@ -172,7 +172,7 @@ type ClaimResponseProcessNote struct {
 	Language          *CodeableConcept `bson:"language,omitempty" json:"language,omitempty"`
 }
 type ClaimResponseInsurance struct {
-	Id                  *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension           []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension   []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Sequence            int         `bson:"sequence" json:"sequence"`
@@ -182,7 +182,7 @@ type ClaimResponseInsurance struct {
 	ClaimResponse       *Reference  `bson:"claimResponse,omitempty" json:"claimResponse,omitempty"`
 }
 type ClaimResponseError struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	ItemSequence      *int            `bson:"itemSequence,omitempty" json:"itemSequence,omitempty"`

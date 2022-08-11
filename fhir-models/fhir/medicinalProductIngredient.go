@@ -21,7 +21,7 @@ import "encoding/json"
 
 // MedicinalProductIngredient is documented here http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient
 type MedicinalProductIngredient struct {
-	Id                  *string                                        `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                                        `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                *Meta                                          `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules       *string                                        `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language            *string                                        `bson:"language,omitempty" json:"language,omitempty"`
@@ -36,7 +36,7 @@ type MedicinalProductIngredient struct {
 	Substance           *MedicinalProductIngredientSubstance           `bson:"substance,omitempty" json:"substance,omitempty"`
 }
 type MedicinalProductIngredientSpecifiedSubstance struct {
-	Id                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              CodeableConcept                                        `bson:"code" json:"code"`
@@ -45,7 +45,7 @@ type MedicinalProductIngredientSpecifiedSubstance struct {
 	Strength          []MedicinalProductIngredientSpecifiedSubstanceStrength `bson:"strength,omitempty" json:"strength,omitempty"`
 }
 type MedicinalProductIngredientSpecifiedSubstanceStrength struct {
-	Id                    *string                                                                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string                                                                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension             []Extension                                                             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension     []Extension                                                             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Presentation          Ratio                                                                   `bson:"presentation" json:"presentation"`
@@ -57,7 +57,7 @@ type MedicinalProductIngredientSpecifiedSubstanceStrength struct {
 	ReferenceStrength     []MedicinalProductIngredientSpecifiedSubstanceStrengthReferenceStrength `bson:"referenceStrength,omitempty" json:"referenceStrength,omitempty"`
 }
 type MedicinalProductIngredientSpecifiedSubstanceStrengthReferenceStrength struct {
-	Id                *string           `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string           `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension       `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension       `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Substance         *CodeableConcept  `bson:"substance,omitempty" json:"substance,omitempty"`
@@ -67,7 +67,7 @@ type MedicinalProductIngredientSpecifiedSubstanceStrengthReferenceStrength struc
 	Country           []CodeableConcept `bson:"country,omitempty" json:"country,omitempty"`
 }
 type MedicinalProductIngredientSubstance struct {
-	Id                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              CodeableConcept                                        `bson:"code" json:"code"`

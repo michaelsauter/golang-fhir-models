@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Bundle is documented here http://hl7.org/fhir/StructureDefinition/Bundle
 type Bundle struct {
-	Id            *string       `bson:"id,omitempty" json:"id,omitempty"`
+	ID            *string       `bson:"id,omitempty" json:"id,omitempty"`
 	Meta          *Meta         `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules *string       `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language      *string       `bson:"language,omitempty" json:"language,omitempty"`
@@ -34,14 +34,14 @@ type Bundle struct {
 	Signature     *Signature    `bson:"signature,omitempty" json:"signature,omitempty"`
 }
 type BundleLink struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Relation          string      `bson:"relation" json:"relation"`
 	Url               string      `bson:"url" json:"url"`
 }
 type BundleEntry struct {
-	Id                *string              `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string              `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension          `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension          `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Link              []BundleLink         `bson:"link,omitempty" json:"link,omitempty"`
@@ -52,14 +52,14 @@ type BundleEntry struct {
 	Response          *BundleEntryResponse `bson:"response,omitempty" json:"response,omitempty"`
 }
 type BundleEntrySearch struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Mode              *SearchEntryMode `bson:"mode,omitempty" json:"mode,omitempty"`
 	Score             *string          `bson:"score,omitempty" json:"score,omitempty"`
 }
 type BundleEntryRequest struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Method            HTTPVerb    `bson:"method" json:"method"`
@@ -70,7 +70,7 @@ type BundleEntryRequest struct {
 	IfNoneExist       *string     `bson:"ifNoneExist,omitempty" json:"ifNoneExist,omitempty"`
 }
 type BundleEntryResponse struct {
-	Id                *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Status            string          `bson:"status" json:"status"`

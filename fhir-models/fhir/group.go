@@ -21,7 +21,7 @@ import "encoding/json"
 
 // Group is documented here http://hl7.org/fhir/StructureDefinition/Group
 type Group struct {
-	Id                *string               `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string               `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                 `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string               `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string               `bson:"language,omitempty" json:"language,omitempty"`
@@ -40,7 +40,7 @@ type Group struct {
 	Member            []GroupMember         `bson:"member,omitempty" json:"member,omitempty"`
 }
 type GroupCharacteristic struct {
-	Id                   *string         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                   *string         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension            []Extension     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension    []Extension     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code                 CodeableConcept `bson:"code" json:"code"`
@@ -53,7 +53,7 @@ type GroupCharacteristic struct {
 	Period               *Period         `bson:"period,omitempty" json:"period,omitempty"`
 }
 type GroupMember struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Entity            Reference   `bson:"entity" json:"entity"`

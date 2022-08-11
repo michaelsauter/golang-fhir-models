@@ -21,7 +21,7 @@ import "encoding/json"
 
 // EffectEvidenceSynthesis is documented here http://hl7.org/fhir/StructureDefinition/EffectEvidenceSynthesis
 type EffectEvidenceSynthesis struct {
-	Id                  *string                                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                  *string                                    `bson:"id,omitempty" json:"id,omitempty"`
 	Meta                *Meta                                      `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules       *string                                    `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language            *string                                    `bson:"language,omitempty" json:"language,omitempty"`
@@ -63,7 +63,7 @@ type EffectEvidenceSynthesis struct {
 	Certainty           []EffectEvidenceSynthesisCertainty         `bson:"certainty,omitempty" json:"certainty,omitempty"`
 }
 type EffectEvidenceSynthesisSampleSize struct {
-	Id                   *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                   *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension            []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension    []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Description          *string     `bson:"description,omitempty" json:"description,omitempty"`
@@ -71,7 +71,7 @@ type EffectEvidenceSynthesisSampleSize struct {
 	NumberOfParticipants *int        `bson:"numberOfParticipants,omitempty" json:"numberOfParticipants,omitempty"`
 }
 type EffectEvidenceSynthesisResultsByExposure struct {
-	Id                    *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension             []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension     []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Description           *string          `bson:"description,omitempty" json:"description,omitempty"`
@@ -80,7 +80,7 @@ type EffectEvidenceSynthesisResultsByExposure struct {
 	RiskEvidenceSynthesis Reference        `bson:"riskEvidenceSynthesis" json:"riskEvidenceSynthesis"`
 }
 type EffectEvidenceSynthesisEffectEstimate struct {
-	Id                *string                                                  `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                                  `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                                              `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                                              `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Description       *string                                                  `bson:"description,omitempty" json:"description,omitempty"`
@@ -91,7 +91,7 @@ type EffectEvidenceSynthesisEffectEstimate struct {
 	PrecisionEstimate []EffectEvidenceSynthesisEffectEstimatePrecisionEstimate `bson:"precisionEstimate,omitempty" json:"precisionEstimate,omitempty"`
 }
 type EffectEvidenceSynthesisEffectEstimatePrecisionEstimate struct {
-	Id                *string          `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string          `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept `bson:"type,omitempty" json:"type,omitempty"`
@@ -100,7 +100,7 @@ type EffectEvidenceSynthesisEffectEstimatePrecisionEstimate struct {
 	To                *string          `bson:"to,omitempty" json:"to,omitempty"`
 }
 type EffectEvidenceSynthesisCertainty struct {
-	Id                    *string                                                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                    *string                                                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension             []Extension                                             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension     []Extension                                             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Rating                []CodeableConcept                                       `bson:"rating,omitempty" json:"rating,omitempty"`
@@ -108,7 +108,7 @@ type EffectEvidenceSynthesisCertainty struct {
 	CertaintySubcomponent []EffectEvidenceSynthesisCertaintyCertaintySubcomponent `bson:"certaintySubcomponent,omitempty" json:"certaintySubcomponent,omitempty"`
 }
 type EffectEvidenceSynthesisCertaintyCertaintySubcomponent struct {
-	Id                *string           `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string           `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension       `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension       `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              *CodeableConcept  `bson:"type,omitempty" json:"type,omitempty"`

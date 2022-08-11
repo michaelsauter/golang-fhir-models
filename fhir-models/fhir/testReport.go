@@ -21,7 +21,7 @@ import "encoding/json"
 
 // TestReport is documented here http://hl7.org/fhir/StructureDefinition/TestReport
 type TestReport struct {
-	Id                *string                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                 `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                   `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                 `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                 `bson:"language,omitempty" json:"language,omitempty"`
@@ -42,7 +42,7 @@ type TestReport struct {
 	Teardown          *TestReportTeardown     `bson:"teardown,omitempty" json:"teardown,omitempty"`
 }
 type TestReportParticipant struct {
-	Id                *string                   `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                   `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension               `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension               `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              TestReportParticipantType `bson:"type" json:"type"`
@@ -50,20 +50,20 @@ type TestReportParticipant struct {
 	Display           *string                   `bson:"display,omitempty" json:"display,omitempty"`
 }
 type TestReportSetup struct {
-	Id                *string                 `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                 `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension             `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension             `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Action            []TestReportSetupAction `bson:"action" json:"action"`
 }
 type TestReportSetupAction struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Operation         *TestReportSetupActionOperation `bson:"operation,omitempty" json:"operation,omitempty"`
 	Assert            *TestReportSetupActionAssert    `bson:"assert,omitempty" json:"assert,omitempty"`
 }
 type TestReportSetupActionOperation struct {
-	Id                *string                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Result            TestReportActionResult `bson:"result" json:"result"`
@@ -71,7 +71,7 @@ type TestReportSetupActionOperation struct {
 	Detail            *string                `bson:"detail,omitempty" json:"detail,omitempty"`
 }
 type TestReportSetupActionAssert struct {
-	Id                *string                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Result            TestReportActionResult `bson:"result" json:"result"`
@@ -79,7 +79,7 @@ type TestReportSetupActionAssert struct {
 	Detail            *string                `bson:"detail,omitempty" json:"detail,omitempty"`
 }
 type TestReportTest struct {
-	Id                *string                `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension            `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension            `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Name              *string                `bson:"name,omitempty" json:"name,omitempty"`
@@ -87,20 +87,20 @@ type TestReportTest struct {
 	Action            []TestReportTestAction `bson:"action" json:"action"`
 }
 type TestReportTestAction struct {
-	Id                *string                         `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                         `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                     `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                     `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Operation         *TestReportSetupActionOperation `bson:"operation,omitempty" json:"operation,omitempty"`
 	Assert            *TestReportSetupActionAssert    `bson:"assert,omitempty" json:"assert,omitempty"`
 }
 type TestReportTeardown struct {
-	Id                *string                    `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                    `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Action            []TestReportTeardownAction `bson:"action" json:"action"`
 }
 type TestReportTeardownAction struct {
-	Id                *string                        `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                        `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                    `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                    `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Operation         TestReportSetupActionOperation `bson:"operation,omitempty" json:"operation,omitempty"`

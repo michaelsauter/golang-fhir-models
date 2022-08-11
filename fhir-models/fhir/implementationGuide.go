@@ -21,7 +21,7 @@ import "encoding/json"
 
 // ImplementationGuide is documented here http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 type ImplementationGuide struct {
-	Id                *string                        `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                        `bson:"id,omitempty" json:"id,omitempty"`
 	Meta              *Meta                          `bson:"meta,omitempty" json:"meta,omitempty"`
 	ImplicitRules     *string                        `bson:"implicitRules,omitempty" json:"implicitRules,omitempty"`
 	Language          *string                        `bson:"language,omitempty" json:"language,omitempty"`
@@ -50,7 +50,7 @@ type ImplementationGuide struct {
 	Manifest          *ImplementationGuideManifest   `bson:"manifest,omitempty" json:"manifest,omitempty"`
 }
 type ImplementationGuideDependsOn struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Uri               string      `bson:"uri" json:"uri"`
@@ -58,14 +58,14 @@ type ImplementationGuideDependsOn struct {
 	Version           *string     `bson:"version,omitempty" json:"version,omitempty"`
 }
 type ImplementationGuideGlobal struct {
-	Id                *string      `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string      `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension  `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension  `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Type              ResourceType `bson:"type" json:"type"`
 	Profile           string       `bson:"profile" json:"profile"`
 }
 type ImplementationGuideDefinition struct {
-	Id                *string                                  `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                                  `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                              `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                              `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Grouping          []ImplementationGuideDefinitionGrouping  `bson:"grouping,omitempty" json:"grouping,omitempty"`
@@ -75,14 +75,14 @@ type ImplementationGuideDefinition struct {
 	Template          []ImplementationGuideDefinitionTemplate  `bson:"template,omitempty" json:"template,omitempty"`
 }
 type ImplementationGuideDefinitionGrouping struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Name              string      `bson:"name" json:"name"`
 	Description       *string     `bson:"description,omitempty" json:"description,omitempty"`
 }
 type ImplementationGuideDefinitionResource struct {
-	Id                *string       `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string       `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension   `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension   `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Reference         Reference     `bson:"reference" json:"reference"`
@@ -94,7 +94,7 @@ type ImplementationGuideDefinitionResource struct {
 	GroupingId        *string       `bson:"groupingId,omitempty" json:"groupingId,omitempty"`
 }
 type ImplementationGuideDefinitionPage struct {
-	Id                *string                             `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                             `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                         `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                         `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	NameUrl           string                              `bson:"nameUrl" json:"nameUrl"`
@@ -104,14 +104,14 @@ type ImplementationGuideDefinitionPage struct {
 	Page              []ImplementationGuideDefinitionPage `bson:"page,omitempty" json:"page,omitempty"`
 }
 type ImplementationGuideDefinitionParameter struct {
-	Id                *string            `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string            `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension        `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension        `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              GuideParameterCode `bson:"code" json:"code"`
 	Value             string             `bson:"value" json:"value"`
 }
 type ImplementationGuideDefinitionTemplate struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Code              string      `bson:"code" json:"code"`
@@ -119,7 +119,7 @@ type ImplementationGuideDefinitionTemplate struct {
 	Scope             *string     `bson:"scope,omitempty" json:"scope,omitempty"`
 }
 type ImplementationGuideManifest struct {
-	Id                *string                               `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string                               `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension                           `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension                           `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Rendering         *string                               `bson:"rendering,omitempty" json:"rendering,omitempty"`
@@ -129,7 +129,7 @@ type ImplementationGuideManifest struct {
 	Other             []string                              `bson:"other,omitempty" json:"other,omitempty"`
 }
 type ImplementationGuideManifestResource struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Reference         Reference   `bson:"reference" json:"reference"`
@@ -138,7 +138,7 @@ type ImplementationGuideManifestResource struct {
 	RelativePath      *string     `bson:"relativePath,omitempty" json:"relativePath,omitempty"`
 }
 type ImplementationGuideManifestPage struct {
-	Id                *string     `bson:"id,omitempty" json:"id,omitempty"`
+	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Name              string      `bson:"name" json:"name"`
