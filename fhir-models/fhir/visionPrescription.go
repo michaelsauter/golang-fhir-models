@@ -46,14 +46,14 @@ type VisionPrescriptionLensSpecification struct {
 	ModifierExtension []Extension                                `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Product           CodeableConcept                            `bson:"product" json:"product"`
 	Eye               VisionEyes                                 `bson:"eye" json:"eye"`
-	Sphere            *string                                    `bson:"sphere,omitempty" json:"sphere,omitempty"`
-	Cylinder          *string                                    `bson:"cylinder,omitempty" json:"cylinder,omitempty"`
+	Sphere            *float64                                   `bson:"sphere,omitempty" json:"sphere,omitempty"`
+	Cylinder          *float64                                   `bson:"cylinder,omitempty" json:"cylinder,omitempty"`
 	Axis              *int                                       `bson:"axis,omitempty" json:"axis,omitempty"`
 	Prism             []VisionPrescriptionLensSpecificationPrism `bson:"prism,omitempty" json:"prism,omitempty"`
-	Add               *string                                    `bson:"add,omitempty" json:"add,omitempty"`
-	Power             *string                                    `bson:"power,omitempty" json:"power,omitempty"`
-	BackCurve         *string                                    `bson:"backCurve,omitempty" json:"backCurve,omitempty"`
-	Diameter          *string                                    `bson:"diameter,omitempty" json:"diameter,omitempty"`
+	Add               *float64                                   `bson:"add,omitempty" json:"add,omitempty"`
+	Power             *float64                                   `bson:"power,omitempty" json:"power,omitempty"`
+	BackCurve         *float64                                   `bson:"backCurve,omitempty" json:"backCurve,omitempty"`
+	Diameter          *float64                                   `bson:"diameter,omitempty" json:"diameter,omitempty"`
 	Duration          *Quantity                                  `bson:"duration,omitempty" json:"duration,omitempty"`
 	Color             *string                                    `bson:"color,omitempty" json:"color,omitempty"`
 	Brand             *string                                    `bson:"brand,omitempty" json:"brand,omitempty"`
@@ -63,7 +63,7 @@ type VisionPrescriptionLensSpecificationPrism struct {
 	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`
 	Extension         []Extension `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
-	Amount            string      `bson:"amount" json:"amount"`
+	Amount            float64     `bson:"amount" json:"amount"`
 	Base              VisionBase  `bson:"base" json:"base"`
 }
 type OtherVisionPrescription VisionPrescription

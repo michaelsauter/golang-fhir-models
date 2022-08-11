@@ -164,7 +164,7 @@ type ClaimItem struct {
 	LocationReference       *Reference        `bson:"locationReference,omitempty" json:"locationReference,omitempty"`
 	Quantity                *Quantity         `bson:"quantity,omitempty" json:"quantity,omitempty"`
 	UnitPrice               *Money            `bson:"unitPrice,omitempty" json:"unitPrice,omitempty"`
-	Factor                  *string           `bson:"factor,omitempty" json:"factor,omitempty"`
+	Factor                  *float64          `bson:"factor,omitempty" json:"factor,omitempty"`
 	Net                     *Money            `bson:"net,omitempty" json:"net,omitempty"`
 	Udi                     []Reference       `bson:"udi,omitempty" json:"udi,omitempty"`
 	BodySite                *CodeableConcept  `bson:"bodySite,omitempty" json:"bodySite,omitempty"`
@@ -184,7 +184,7 @@ type ClaimItemDetail struct {
 	ProgramCode       []CodeableConcept          `bson:"programCode,omitempty" json:"programCode,omitempty"`
 	Quantity          *Quantity                  `bson:"quantity,omitempty" json:"quantity,omitempty"`
 	UnitPrice         *Money                     `bson:"unitPrice,omitempty" json:"unitPrice,omitempty"`
-	Factor            *string                    `bson:"factor,omitempty" json:"factor,omitempty"`
+	Factor            *float64                   `bson:"factor,omitempty" json:"factor,omitempty"`
 	Net               *Money                     `bson:"net,omitempty" json:"net,omitempty"`
 	Udi               []Reference                `bson:"udi,omitempty" json:"udi,omitempty"`
 	SubDetail         []ClaimItemDetailSubDetail `bson:"subDetail,omitempty" json:"subDetail,omitempty"`
@@ -201,7 +201,7 @@ type ClaimItemDetailSubDetail struct {
 	ProgramCode       []CodeableConcept `bson:"programCode,omitempty" json:"programCode,omitempty"`
 	Quantity          *Quantity         `bson:"quantity,omitempty" json:"quantity,omitempty"`
 	UnitPrice         *Money            `bson:"unitPrice,omitempty" json:"unitPrice,omitempty"`
-	Factor            *string           `bson:"factor,omitempty" json:"factor,omitempty"`
+	Factor            *float64          `bson:"factor,omitempty" json:"factor,omitempty"`
 	Net               *Money            `bson:"net,omitempty" json:"net,omitempty"`
 	Udi               []Reference       `bson:"udi,omitempty" json:"udi,omitempty"`
 }

@@ -59,7 +59,7 @@ type BundleEntrySearch struct {
 	Extension         []Extension      `bson:"extension,omitempty" json:"extension,omitempty"`
 	ModifierExtension []Extension      `bson:"modifierExtension,omitempty" json:"modifierExtension,omitempty"`
 	Mode              *SearchEntryMode `bson:"mode,omitempty" json:"mode,omitempty"`
-	Score             *string          `bson:"score,omitempty" json:"score,omitempty"`
+	Score             *float64         `bson:"score,omitempty" json:"score,omitempty"`
 }
 type BundleEntryRequest struct {
 	ID                *string     `bson:"id,omitempty" json:"id,omitempty"`

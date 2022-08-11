@@ -82,7 +82,7 @@ type TaskInput struct {
 	ValueCode                string              `bson:"valueCode" json:"valueCode"`
 	ValueDate                string              `bson:"valueDate" json:"valueDate"`
 	ValueDateTime            string              `bson:"valueDateTime" json:"valueDateTime"`
-	ValueDecimal             string              `bson:"valueDecimal" json:"valueDecimal"`
+	ValueDecimal             float64             `bson:"valueDecimal" json:"valueDecimal"`
 	ValueID                  string              `bson:"valueID" json:"valueID"`
 	ValueInstant             string              `bson:"valueInstant" json:"valueInstant"`
 	ValueInteger             int                 `bson:"valueInteger" json:"valueInteger"`
@@ -138,7 +138,7 @@ type TaskOutput struct {
 	ValueCode                string              `bson:"valueCode" json:"valueCode"`
 	ValueDate                string              `bson:"valueDate" json:"valueDate"`
 	ValueDateTime            string              `bson:"valueDateTime" json:"valueDateTime"`
-	ValueDecimal             string              `bson:"valueDecimal" json:"valueDecimal"`
+	ValueDecimal             float64             `bson:"valueDecimal" json:"valueDecimal"`
 	ValueID                  string              `bson:"valueID" json:"valueID"`
 	ValueInstant             string              `bson:"valueInstant" json:"valueInstant"`
 	ValueInteger             int                 `bson:"valueInteger" json:"valueInteger"`
